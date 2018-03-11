@@ -1,0 +1,12 @@
+{
+  "name": "cozy-konnector-extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Develop your cozy konnector inside Chrome",
+  "devtools_page": "index.html",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
