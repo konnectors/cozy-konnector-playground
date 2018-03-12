@@ -7,10 +7,9 @@ import Panel from './components/Panel'
 // https://developer.chrome.com/extensions/devtools.panels#event-ElementsPanel-onSelectionChanged
 
 document.addEventListener('DOMContentLoaded', () => {
-  const node = document.querySelector('#app')
-  console.log('Trying to inject')
-  chrome.tabs.executeScript({
+  browser.tabs.executeScript({
     file: './toInject.js'
   })
+  const node = document.querySelector('#app')
   ReactDOM.render(<Panel />, node)
 })
