@@ -54,7 +54,8 @@ const scrape = ($, specs, childSelector) => {
     } else if (spec.attr) {
       val = data.attr(spec.attr);
     } else {
-      val = data.text().trim();
+      const text = data.text()
+      val = text ? text.trim() : '';
     }
     if (spec.parse) {
       val = spec.parse(val);

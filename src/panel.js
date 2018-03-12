@@ -16,7 +16,7 @@ const wrapInTry = code => {
 class Panel extends React.Component {
   constructor() {
     super()
-      this.sendScript = this.sendScript.bind(this)
+    this.sendScript = this.sendScript.bind(this)
     this.state = { items: [], err: null }
     this.first = true
   }
@@ -42,13 +42,17 @@ class Panel extends React.Component {
           onChange={this.sendScript}
           style={{ fontFamily: 'courier' }}
         >
-        {`scrape($, {
+          {`scrape($, {
           title: '.title',
           content: '.content'
         }, '.article')`}
         </textarea>
         <Items items={items} />
-        { err ? <div style={{background:'crimson'}}>{ err} </div> : null}
+        {err
+          ? <div style={{ background: 'crimson' }}>
+              {err}{' '}
+            </div>
+          : null}
       </div>
     )
   }
