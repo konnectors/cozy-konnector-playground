@@ -1,4 +1,5 @@
 import React from 'react'
+import Editor from './Editor'
 
 const Items = ({ items }) => {
   return (
@@ -15,19 +16,30 @@ const wrapInTry = code => {
 class Panel extends React.Component {
   constructor() {
     super()
-    this.sendScript = this.sendScript.bind(this)
-    this.state = { items: [], err: null }
-    this.first = true
+
+    this.state = {
+      items: [],
+      err: null,
+      code: `scrape($, {
+  title: '.title',
+  content: '.content'
+}, '.article')`
+    }
   }
 
   componentDidMount () {
-    this.sendScript()
+    this.sendScript(this.state.code)
   }
 
-  sendScript(ev) {
+  update(code) {
+    this.setState({code})
+    this.sendScript(code)
+  }
+
+  sendScript(code) {
     browser.tabs.executeScript(
       {
-        code: wrapInTry(this.textarea.value)
+        code: wrapInTry(code)
       },
       x => {
         this.setState({ items: x[0], err: null })
@@ -36,21 +48,14 @@ class Panel extends React.Component {
   }
 
   render() {
-    const { err, items } = this.state
+    const { err, items, code } = this.state
+
     return (
       <div>
-        <textarea
-          ref={ref=>{ this.textarea = ref }}
-          rows="10"
-          cols="30"
-          onChange={this.sendScript}
-          style={{ fontFamily: 'courier' }}
-        >
-          {`scrape($, {
-          title: '.title',
-          content: '.content'
-        }, '.article')`}
-        </textarea>
+        <Editor
+          code={code}
+          onChange={newCode => this.update(newCode)}
+        />
         <Items items={items} />
         {err
           ? <div style={{ background: 'crimson' }}>
