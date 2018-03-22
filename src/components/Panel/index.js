@@ -1,13 +1,7 @@
 import React from 'react'
-import Editor from './Editor'
-
-const Items = ({ items }) => {
-  return (
-    <pre>
-      {JSON.stringify(items, null, 2)}
-    </pre>
-  )
-}
+import Editor from '../Editor'
+import Result from '../Result'
+import './style.css'
 
 const wrapInTry = code => {
   return `try{ ${code} } catch (e) {e}`
@@ -18,7 +12,7 @@ class Panel extends React.Component {
     super()
 
     this.state = {
-      items: [],
+      result: [],
       err: null,
       code: `scrape($, {
   title: '.title',
@@ -41,27 +35,25 @@ class Panel extends React.Component {
       {
         code: wrapInTry(code)
       },
-      x => {
-        this.setState({ items: x[0], err: null })
+      result => {
+        this.setState({ result: result[0], err: null })
       }
     )
   }
 
   render() {
-    const { err, items, code } = this.state
+    const { err, result, code } = this.state
 
     return (
-      <div>
+      <div className="Panel">
         <Editor
           code={code}
           onChange={newCode => this.update(newCode)}
         />
-        <Items items={items} />
-        {err
-          ? <div style={{ background: 'crimson' }}>
-              {err}{' '}
-            </div>
-          : null}
+        <Result
+          result={result}
+          error={err}
+        />
       </div>
     )
   }

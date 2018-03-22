@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "babel-preset-cozy-app": "^0.3.2",
+    "classnames": "^2.2.5",
     "copy-webpack-plugin": "^4.5.1",
     "react-codemirror": "^1.0.0",
     "react-dom": "^16.2.0",
