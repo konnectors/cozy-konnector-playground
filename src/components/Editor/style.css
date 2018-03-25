@@ -1,0 +1,15 @@
+.Editor {
+  height: 100vh;
+  width: 50vw;
+}
+
+.CodeMirror {
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .Editor {
+    height: 50vh;
+    width: 100vw;
+  }
+}
