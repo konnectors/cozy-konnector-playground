@@ -1,3 +1,4 @@
+const highlighter = require('./utils/highlighter')
 /**
  * Declarative scraping.
  *
@@ -67,3 +68,4 @@ const scrape = ($, specs, childSelector) => {
 
 window.$ = require('zepto')
 window.scrape = scrape
+window.highlighter = highlighter
