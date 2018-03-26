@@ -1,5 +1,5 @@
 import React from 'react'
-import CodeMirror from 'react-codemirror'
+import {Controlled as CodeMirror} from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/mode/javascript/javascript'
 import './style.css'
@@ -11,7 +11,7 @@ const Editor = ({
   <CodeMirror
     className='Editor'
     value={code}
-    onChange={onChange}
+    onBeforeChange={onChange}
     options={{
       lineNumbers: true,
       mode: 'javascript'
