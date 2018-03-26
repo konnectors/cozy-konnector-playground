@@ -5,6 +5,7 @@ import Controls from '../Controls'
 import storage, { snippets } from '../../utils/storage'
 import './style.css'
 
+
 const wrapInTry = code => {
   return `try{ ${code} } catch (e) {e}`
 }
