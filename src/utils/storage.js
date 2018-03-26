@@ -28,4 +28,6 @@ export const mkStore = (prefix = '') => ({
   ls: () => ls(globalPrefix + prefix)
 })
 
+
+export const snippets = mkStore('snippet__')
 export default mkStore()
