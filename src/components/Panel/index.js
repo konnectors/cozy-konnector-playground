@@ -27,6 +27,20 @@ class Panel extends React.Component {
 
     this.handleSaveSnippet = this.handleSaveSnippet.bind(this)
     this.handleLoadSnippet = this.handleLoadSnippet.bind(this)
+    this.handleClickStartPicker = this.handleClickStartPicker.bind(this)
+    this.handleClickStopPicker = this.handleClickStopPicker.bind(this)
+  }
+
+  handleClickStartPicker () {
+    browser.tabs.executeScript({
+      code: `highlighter.startPicker()`
+    })
+  }
+
+  handleClickStopPicker () {
+    browser.tabs.executeScript({
+      code: `highlighter.stopPicker()`
+    })
   }
 
   handleSaveSnippet () {
@@ -72,6 +86,8 @@ class Panel extends React.Component {
           onChange={(editor, data, value) => this.update(value)}
         />
         <Controls
+          onClickStartPicker={this.handleClickStartPicker}
+          onClickStopPicker={this.handleClickStopPicker}
           onSaveSnippet={this.handleSaveSnippet}
           onLoadSnippet={this.handleLoadSnippet}
           />

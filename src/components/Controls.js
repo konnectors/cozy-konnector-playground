@@ -31,6 +31,9 @@ class Controls extends React.Component {
   render () {
     return (
       <div>
+        <button onClick={this.props.onClickStartPicker}>Start picker</button>
+        <button onClick={this.props.onClickStopPicker}>Stop picker</button>
+        &nbsp;|&nbsp;
         <button onClick={this.props.onSaveSnippet}>Save snippet</button>&nbsp;
         <SnippetSelector onChange={this.props.onLoadSnippet}/>
       </div>
