@@ -20,7 +20,9 @@ yarn
 yarn build
 ```
 
-This will create the `dist/`` folder with the files bundled ready to be installed in Chrome.
+This will create the `dist/` folder with the files bundled ready to be installed in Chrome.
+
+### Chrome
 
 To install in Chrome you can : 
 
@@ -29,3 +31,7 @@ To install in Chrome you can :
 3. Load unpacked extension > Choose the dist/ folder
 
 ✨You now have the "Konnector" panel in your Chrome devtools.
+
+### Firefox
+
+The extension is planned to worked in Firefox and Chrome but since there are small API differences between the two, it does not work yet in Firefox. PRs are welcome ;)
