@@ -2,9 +2,11 @@
 
 Extension to help build Cozy konnectors.
 
-1. Interactive REPL to quickly see what you are scraping
-2. TODO: save scraper functions page by page
-3. TODO: generate a konnector from the playground
+1. [x] Interactive REPL to quickly see what you are scraping
+2. [x] Mouse selection to get selectors 
+3. [x] Saving REPL in localStorage
+4. [ ] Save page by page
+4. [ ] Generate a konnector from the playground
 
 ## Installation
 
