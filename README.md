@@ -1,4 +1,4 @@
-# Cozy konnector playground
+# Cozy konnector extension
 
 Extension to help build Cozy konnectors.
 
@@ -7,6 +7,8 @@ Extension to help build Cozy konnectors.
 3. [x] Saving REPL in localStorage
 4. [ ] Save page by page
 4. [ ] Generate a konnector from the playground
+5. [ ] Access to default parsers
+6. [ ] Load a konnector in the extension
 
 ## Installation
 
