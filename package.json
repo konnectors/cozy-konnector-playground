@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "babel-loader": "7.1.3",
+    "babel-loader": "7.1.5",
     "css-loader": "0.28.11",
     "react": "16.2.0",
     "style-loader": "0.21.0",
