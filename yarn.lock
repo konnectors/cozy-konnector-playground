@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@babel/helper-plugin-utils@^7.0.0-beta.46":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.0.0.tgz#bbb3fbee98661c569034237cc03967ba99b4f250"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -779,10 +783,11 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-preset-cozy-app@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/babel-preset-cozy-app/-/babel-preset-cozy-app-0.3.2.tgz#875bf6fa63c90e97c4ffcdfb2320f7199ed672a6"
+babel-preset-cozy-app@^0.10.0:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-cozy-app/-/babel-preset-cozy-app-0.10.1.tgz#2d67cba1226328cd13ba134a2f938233124d40b7"
   dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0-beta.46"
     babel-plugin-transform-class-properties "^6.24.1"
     babel-plugin-transform-object-rest-spread "^6.26.0"
     babel-plugin-transform-react-jsx "^6.24.1"
