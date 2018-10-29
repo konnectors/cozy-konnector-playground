@@ -15,7 +15,7 @@
     "watch": "yarn build --watch"
   },
   "dependencies": {
-    "babel-preset-cozy-app": "^0.3.2",
+    "babel-preset-cozy-app": "^0.10.0",
     "classnames": "^2.2.5",
     "codemirror": "^5.36.0",
     "copy-webpack-plugin": "^4.5.1",
