@@ -787,7 +787,7 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-preset-cozy-app@^0.10.0:
+babel-preset-cozy-app@0.10.1:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/babel-preset-cozy-app/-/babel-preset-cozy-app-0.10.1.tgz#2d67cba1226328cd13ba134a2f938233124d40b7"
   dependencies:
@@ -1319,7 +1319,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1416,7 +1416,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-codemirror@^5.36.0:
+codemirror@5.36.0:
   version "5.36.0"
   resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.36.0.tgz#1172ad9dc298056c06e0b34e5ccd23825ca15b40"
 
@@ -1552,7 +1552,7 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
-copy-webpack-plugin@^4.5.1:
+copy-webpack-plugin@4.5.1:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-4.5.1.tgz#fc4f68f4add837cc5e13d111b20715793225d29c"
   dependencies:
@@ -4428,7 +4428,7 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-codemirror2@^5.0.0:
+react-codemirror2@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-5.0.0.tgz#18e0d4495c3cfe0c4675dd9bfcea074ca3aa9f56"
 
@@ -4527,7 +4527,7 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-redbox-react@^1.5.0:
+redbox-react@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/redbox-react/-/redbox-react-1.5.0.tgz#04dab11557d26651bf3562a67c22ace56c5d3967"
   dependencies:
@@ -4734,7 +4734,7 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-commonjs@^9.0.0:
+rollup-plugin-commonjs@9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.0.0.tgz#9118e9041b67cdd2a6d8c59dda6349556dce3d0c"
   dependencies:
@@ -4743,20 +4743,20 @@ rollup-plugin-commonjs@^9.0.0:
     resolve "^1.5.0"
     rollup-pluginutils "^2.0.1"
 
-rollup-plugin-copy@^0.2.3:
+rollup-plugin-copy@0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/rollup-plugin-copy/-/rollup-plugin-copy-0.2.3.tgz#dac1ab81d1f220baeb98e5c4c0108252e1edbb98"
   dependencies:
     colors "^1.1.2"
     fs-extra "^3.0.0"
 
-rollup-plugin-json@^2.3.0:
+rollup-plugin-json@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-json/-/rollup-plugin-json-2.3.0.tgz#3c07a452c1b5391be28006fbfff3644056ce0add"
   dependencies:
     rollup-pluginutils "^2.0.1"
 
-rollup-plugin-jsx@^1.0.3:
+rollup-plugin-jsx@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/rollup-plugin-jsx/-/rollup-plugin-jsx-1.0.3.tgz#92793bca9e36f90fd00d991f6a0870e59defafad"
   dependencies:
@@ -4764,7 +4764,7 @@ rollup-plugin-jsx@^1.0.3:
     magic-string "^0.14.0"
     rollup-pluginutils "^1.3.1"
 
-rollup-plugin-node-resolve@^3.2.0:
+rollup-plugin-node-resolve@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-3.2.0.tgz#31534952f3ab21f9473c1d092be7ed43937ea4d4"
   dependencies:
@@ -4772,7 +4772,7 @@ rollup-plugin-node-resolve@^3.2.0:
     is-module "^1.0.0"
     resolve "^1.1.6"
 
-rollup-plugin-replace@^2.0.0:
+rollup-plugin-replace@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-replace/-/rollup-plugin-replace-2.0.0.tgz#19074089c8ed57184b8cc64e967a03d095119277"
   dependencies:
@@ -5621,7 +5621,7 @@ webpack-sources@^1.0.1, webpack-sources@^1.1.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.1.1:
+webpack@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.1.1.tgz#44e4d6a869dd36fdfc0b227f9bd865a4bccfd81c"
   dependencies:
@@ -5789,10 +5789,10 @@ yeoman-generator@^2.0.5:
     through2 "^2.0.0"
     yeoman-environment "^2.0.5"
 
-zepto-webpack@^1.2.1:
+zepto-webpack@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/zepto-webpack/-/zepto-webpack-1.2.1.tgz#0726107748a90c96349f3076c015a06cc6222d5f"
 
-zepto@^1.2.0:
+zepto@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/zepto/-/zepto-1.2.0.tgz#e127bd9e66fd846be5eab48c1394882f7c0e4f98"
