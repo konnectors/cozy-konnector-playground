@@ -7,7 +7,7 @@
     "babel-loader": "7.1.5",
     "css-loader": "0.28.11",
     "react": "16.8.3",
-    "style-loader": "0.23.1",
+    "style-loader": "1.2.1",
     "webpack-cli": "2.1.5"
   },
   "scripts": {
